@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build SFML 3.0 App",
+            "command": "g++",
+            "args": [
+                "-w",
+                "${file}",
+                "-o",
+                "${fileDirname}\\CampusPortalApp.exe",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compiler task optimized for single-file native SFML 3.0 builds."
+        }
+    ]
+}
